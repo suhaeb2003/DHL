@@ -19,6 +19,7 @@ header {
 }
 .hero-section {
   background: url("../Image/headerbg.jpg") no-repeat center center/cover;
+
   height: 70vh;
 }
 .sub_section {
@@ -83,14 +84,18 @@ hr.divHr {
   border-radius: 4px;
   transition: 0.5s;
 }
+
 /* For responsive design  */
 @media only screen and (min-width: 600px) {
-  .left_div {
-    position: relative;
+  .hero-section {
+    height: 80vh;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+  }
   img.w-25 {
     width: 17% !important;
   }
@@ -98,6 +103,10 @@ hr.divHr {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
+  .search_button button {
+    width: 100%;
+    margin-bottom: 3rem;
+}
 }
 
 @media only screen and (min-width: 992px) {
@@ -105,12 +114,24 @@ hr.divHr {
     font-size: 98%;
   }
 
+  .search_bos {
+    position: relative;
+  }
+  .search_button button {
+    padding: 12px 20px 13px 20px;
+}
+  .search_button {
+    position: absolute;
+    top: 4%;
+    right: 3px;
+  }
   #card_box {
     position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
+    border: 0px 1px 1px 1px white !important;
   }
   .card_box_warp {
     box-shadow: 0px 0px 5px 4px #00000073;
