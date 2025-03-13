@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 /* create root */
 :root {
   --primary-color: #ffcc00;
@@ -32,7 +33,9 @@ header {
 input.form-control:focus {
   box-shadow: none;
 }
-
+.package_details {
+  font-family: "Roboto Condensed", sans-serif;
+}
 /* for card desing */
 .card-title {
   font-size: 15px;
@@ -54,7 +57,7 @@ input.form-control:focus {
 
 hr.divHr {
   color: #000000 !important;
-  height: 2px;
+  height: 3px;
   width: 13%;
   opacity: 100%;
 }
@@ -83,6 +86,19 @@ hr.divHr {
   border: 1px solid black;
   border-radius: 4px;
   transition: 0.5s;
+}
+/*for ship page */
+.ship_title {
+  font-size: 2.5rem;
+  color: #D40511;
+  font-weight: 900;
+}
+select#floatingSelect:focus{
+  box-shadow: none;
+}
+select#floatingSelect:hover,#floatingInputGrid:hover{
+  box-shadow: 0px 0px 10px 1px #00000023;
+  transition: all 0.3s ease-in-out;
 }
 
 /* For responsive design  */

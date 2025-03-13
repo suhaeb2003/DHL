@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./Image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>DHL Home</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="./Image/dhl-logo.svg" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Find a Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass me-2"></i> Search </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-globe me-2"></i> United States of America </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="ship_title">Ship Now</h1>
+                    <div class="col-6">
+                        <hr class="divHr">
+                    </div>
+                    <p class="fs-5 package_detials">Packages and pallets, big and small, we can offer you instant delivery options for your shipping needs, both domestically and internationally. Fill out your shipment details below and we’ll provide services tailored to your specific requirements. Simply pick the option that suits you best, and continue to book.</p>
+                </div>
+            </div>
+            <div class="row row-cols-md-4 gy-3 gy-md-0 mt-3 px-md-5">
+                <div class="text-center">
+                    <h1 class="ship_title">1.</h1>
+                    <p class="fs-6 fw-bolder">ENTER ORIGIN AND DESTINATION</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="ship_title">2.</h1>
+                    <p class="fs-6 fw-bold">DESCRIBE YOUR SHIPMENT</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="ship_title">3.</h1>
+                    <p class="fs-6 fw-bolder">GET DELIVERY PRICES</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="ship_title">4.</h1>
+                    <p class="fs-6 fw-bolder">PROCEED WITH ONLINE BOOKING</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I am shipping section start -->
+     <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-sm-12 col-md-10">
+            <h4 class="fw-bolder fs-2 mb-3">I am shipping as a...</h4>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active fs-6 text-danger fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Private Persion</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fs-6 text-danger fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Business</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active shadow-sm p-3 rounded bg-white" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row row-cols-2 justify-content-between">
+                    <div class="col w-75">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Create an import shipments</label>
+                      </div></div>
+                    <div class="col w-25 text-end"><i class="fa-solid fa-circle-info"></i></div>
+                  </div>
+                  <h4 class="fw-bold fs-5 my-2">Form</h4>
+                  <div class="row row-cols-1 row-cols-md-3 gy-3">
+                    <div class="col">
+                      <div class="form-floating">
+                        <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>United State of America</option>
+                          <option value="1">Candia</option>
+                          <option value="2">Australia</option>
+                          <option value="3">Newzilend</option>
+                        </select>
+                        <label for="floatingSelect" class="fw-bold">Country or Region <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-floating">
+                        <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>United State of America</option>
+                          <option value="1">Candia</option>
+                          <option value="2">Australia</option>
+                          <option value="3">Newzilend</option>
+                        </select>
+                        <label for="floatingSelect" class="fw-bold">City(Optional)</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="2480" value="2485">
+                        <label for="floatingInputGrid" class="fw-bold">Zip Code (Optional)</label>
+                      </div>
+                  </div>
+              </div>
+              <!-- To form here -->
+              <h4 class="fw-bold fs-5 mb-2 mt-4">To</h4>
+              <div class="row row-cols-1 row-cols-md-3 gy-3">
+                <div class="col">
+                  <div class="form-floating">
+                    <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>United State of America</option>
+                      <option value="1">Candia</option>
+                      <option value="2">Australia</option>
+                      <option value="3">Newzilend</option>
+                    </select>
+                    <label for="floatingSelect" class="fw-bold">Country or Region <span class="text-danger">*</span></label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating">
+                    <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>United State of America</option>
+                      <option value="1">Candia</option>
+                      <option value="2">Australia</option>
+                      <option value="3">Newzilend</option>
+                    </select>
+                    <label for="floatingSelect" class="fw-bold">City(Optional)</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="2480" value="2485">
+                    <label for="floatingInputGrid" class="fw-bold">Zip Code (Optional)</label>
+                  </div>
+              </div>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  This is a residential address
+                </label>
+              </div>
+              <button class="btn btn-danger fw-bold w-100 my-3">Describe your shipment</button>
+          </div>
+
+
+          <!-- Business tab here -->
+              <div class="tab-pane fade shadow-sm p-3 rounded bg-white" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row row-cols-2 row-cols-md-1">
+                  <div class="col w-75">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Create an import shipments</label>
+                    </div>
+                  </div>
+                  <div class="col w-25 text-end"><i class="fa-solid fa-circle-info"></i></div>
+                </div>
+                <h4 class="fw-bold fs-5 my-2">Form</h4>
+                <div class="row row-cols-1 row-cols-md-3 gy-3">
+                  <div class="col">
+                    <div class="form-floating">
+                      <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>United State of America</option>
+                        <option value="1">Candia</option>
+                        <option value="2">Australia</option>
+                        <option value="3">Newzilend</option>
+                      </select>
+                      <label for="floatingSelect" class="fw-bold">Country or Region <span class="text-danger">*</span></label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-floating">
+                      <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>United State of America</option>
+                        <option value="1">Candia</option>
+                        <option value="2">Australia</option>
+                        <option value="3">Newzilend</option>
+                      </select>
+                      <label for="floatingSelect" class="fw-bold">City</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInputGrid" placeholder="2480" value="2485">
+                      <label for="floatingInputGrid" class="fw-bold">Zip Code <span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+            <!-- To form here -->
+            <h4 class="fw-bold fs-5 mb-2 mt-4">To</h4>
+            <div class="row row-cols-1 row-cols-md-3 gy-3">
+              <div class="col">
+                <div class="form-floating">
+                  <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>United State of America</option>
+                    <option value="1">Candia</option>
+                    <option value="2">Australia</option>
+                    <option value="3">Newzilend</option>
+                  </select>
+                  <label for="floatingSelect" class="fw-bold">Country or Region <span class="text-danger">*</span></label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-floating">
+                  <select class="form-select " id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>United State of America</option>
+                    <option value="1">Candia</option>
+                    <option value="2">Australia</option>
+                    <option value="3">Newzilend</option>
+                  </select>
+                  <label for="floatingSelect" class="fw-bold">City</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputGrid" placeholder="2480" value="2485">
+                  <label for="floatingInputGrid" class="fw-bold">Zip Code <span class="text-danger">*</span></label>
+                </div>
+            </div>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                This is a residential address
+              </label>
+            </div>
+            <button class="btn btn-danger fw-bold w-100 my-3">Describe your shipment</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+     </section>
+    <!-- I am shipping section end -->
+    <!-- International shipping section start -->
+     <section class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <h4 class="fs-2 fw-bolder">How does international shipping from the U.S work?</h4>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 gy-3">
+            <div class="col">
+              <div class="shadow-md p-3 rounded bg-white h-100">
+                <h1 class="fw-bolder fs-6">Shipping to North America</h1>
+                <p>DHL offers a range of solutions for cross-border shipping in North America</p>
+                <ul type="square">
+                  <li class="mb-2 text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Canada<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Jamaica<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shadow-md px-3 py-3 rounded bg-white h-100">
+                <h1 class="fw-bolder fs-6">Shipping to Oceania</h1>
+                <p>With a strong global network DHL is making shipping from US to Australia and New Zealand easy</p>
+                <ul type="square">
+                  <li class="mb-1 text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Australi<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="text-danger"><a href="" class="ms-1 text-danger text-decoration-underline">Explore Shipping from the US to New Zealand<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shadow-md p-3 rounded bg-white h-100">
+                <h1 class="fw-bolder fs-6">Shipping to Asia</h1>
+                <p>Overseas shipping made easy with DHL. Find out more about the affordable and timely shipping solutions</p>
+                <ul type="square">
+                  <li class="mb-1 text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Philiippines<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="mb-1 text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Singapore<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to India<i class="ms-1 fa-solid fa-arrow-up-right-from-square text-decoration-none"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shadow-md p-3 rounded bg-white h-100">
+                <h1 class="fw-bolder fs-6">Shipping to Urope</h1>
+                <p>DHL is your reliable partner for international shipping from the US to Europe</p>
+                <ul type="square">
+                  <li class="text-danger mb-1"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Urope<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to UK<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="shadow-md p-3 rounded bg-white h-100">
+                <h1 class="fw-bolder fs-6">Shipping to Africa</h1>
+                <p>Trust DHL as your partner for smooth international shipping from the US to Africa</p>
+                <ul type="square">
+                  <li class="text-danger mb-1"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to South Africa<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                  <li class="text-danger"><a href="" class="text-danger text-decoration-underline">Explore Shipping from the US to Nigeria<i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+    <!-- International shipping section end -->
+
+    <section class="py-5 border-top">
+      <div class="container">
+        <div class="row row-cols-md-4 gy-2 gy-md-0 ">
+          <div class="">
+            <ul class="list-unstyled">
+              <li class="mb-2 text-danger fw-bold">Quick Link</a></li>
+              <li class="mb-2"><a href="">Customer Service</a></li>
+              <li class="mb-2"><a href="">Customer Portal Logins</a></li>
+              <li class="mb-2"><a href="">Strategic Partner Directory</a></li>
+              <li class="mb-2"><a href="">Developer Portal </a></li>
+              <li class="mb-2"><a href="">Get a Quote</a></li>
+              <li class="mb-2"><a href="">Request a Business Account</a></li>
+              <li class="mb-2"><a href="">DHL for Your Business</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="list-unstyled">
+              <li class="mb-2  fw-bold">Our Divisions</a></li>
+              <li class="mb-2"><a href="">DHL Express</a></li>
+              <li class="mb-2"><a href="">DHL Global Forwarding</a></li>
+              <li class="mb-2"><a href="">DHL Supply Chain</a></li>
+              <li class="mb-2"><a href="">DHL eCommerce </a></li>
+              <li class="mb-2"><a href="">Other Global Divisions</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="list-unstyled">
+              <li class="mb-2  fw-bold">Industry Sectors</a></li>
+              <li class="mb-2"><a href="">Auto-Mobility </a></li>
+              <li class="mb-2"><a href=""> Energy </a></li>
+              <li class="mb-2"><a href="">Engineering and Manufacturing </a></li>
+              <li class="mb-2"><a href="">Life Sciences and Healthcare </a></li>
+              <li class="mb-2"><a href="">Retail and Fashion </a></li>
+              <li class="mb-2"><a href="">Technology </a></li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="list-unstyled">
+              <li class="mb-2 fw-bold">Company Information</a></li>
+              <li class="mb-2"><a href="">About DHL </a></li>
+              <li class="mb-2"><a href="">Delivered Magazine </a></li>
+              <li class="mb-2"><a href="">Careers  </a></li>
+              <li class="mb-2"><a href="">Press Center </a></li>
+              <li class="mb-2"><a href="">Investors  </a></li>
+              <li class="mb-2"><a href="">Sustainability </a></li>
+              <li class="mb-2"><a href="">Supplier Diversity </a></li>
+              <li class="mb-2"><a href="">Innovation </a></li>
+              <li class="mb-2"><a href="">Events </a></li>
+              <li class="mb-2"><a href="">Brand Partnerships </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section start -->
+    <footer class="bg-light pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class="row">
+                <div class="col-md-6 mb-2">
+                    <img src="./Image/footer-logo.svg" alt="">
+                </div>
+                <div>
+                    <div class="col-12 mb-2 mb-mg-0">
+                    <div class="d-block d-md-none d-lg-none">
+                        <nav class="nav-link ">
+                        <a class="nav-link text-dark" href="#">Fraud Awareness</a>
+                        <a class="nav-link text-dark" href="#">Legal Notice</a>
+                        <a class="nav-link text-dark" href="#">Terms of Use</a>
+                        <a class="nav-link text-dark" href="#">Privacy Notice</a>
+                        <a class="nav-link text-dark" href="#">Dispute Resolution</a>
+                        <a class="nav-link text-dark" href="#">Additional Information</a>
+                        </nav>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <nav class="nav">
+                        <a class="nav-link text-dark" href="#">Fraud Awareness</a>
+                        <a class="nav-link text-dark" href="#">Legal Notice</a>
+                        <a class="nav-link text-dark" href="#">Terms of Use</a>
+                        <a class="nav-link text-dark" href="#">Privacy Notice</a>
+                        <a class="nav-link text-dark" href="#">Dispute Resolution</a>
+                        <a class="nav-link text-dark" href="#">Additional Information</a>
+                        </nav>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                <div class="">
+                    <div class="">
+                    <b>Follow Us</b>
+                    <ul class="nav px-0 social_icon">
+                        <a class="nav-link " href="#"><i class="fa-brands fa-youtube text-muted fs-5"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f text-muted fs-5"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-brands fa-linkedin text-muted fs-5"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram text-muted fs-5"></i></a>
+                        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+            
+        <div class="row border-top">
+            <div class="col-12 d-flex justify-content-center mt-2">
+            2025 © - all rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+    <script src="./Js/bootstrap.bundle.js"></script>
+    <script src="./Js/bootstrap.min.js"></script>
+</body>
+</html>
