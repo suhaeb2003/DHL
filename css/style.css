@@ -4,7 +4,7 @@
   --secondary-color: #000000;
   --tertiary-color: #ffefae;
   --hover-color: #d91f26;
-  --button-color: #d40511;
+  --button-color: #b9060f;
 }
 a {
   text-decoration: none;
@@ -18,7 +18,7 @@ header {
   );
 }
 .hero-section {
-  background: url("./Image/headerbg.jpg") no-repeat center center/cover;
+  background: url("../Image/headerbg.jpg") no-repeat center center/cover;
   height: 70vh;
 }
 .sub_section {
@@ -68,10 +68,22 @@ hr.divHr {
 .btn-danger {
   background: var(--button-color) !important;
 }
+.btn-danger:hover {
+  background: var(--hover-color) !important;
+}
 .text-danger {
   color: var(--button-color) !important;
 }
+.social_icon a {
+  padding: 8px !important;
+}
 
+.social_icon a:hover {
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+/* For responsive design  */
 @media only screen and (min-width: 600px) {
   .left_div {
     position: relative;
@@ -82,7 +94,7 @@ hr.divHr {
   img.w-25 {
     width: 17% !important;
   }
-  .px-4{
+  .px-4 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
