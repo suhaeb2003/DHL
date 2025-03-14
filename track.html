@@ -50,97 +50,157 @@
 
     <section class="bg-light py-5">
         <div class="container">
-            <div class="row">
-                <div class="row my-3">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="col">
-                            <div class="search_bos">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="trackingNumber"
-                                        placeholder="Enter Tracking Number">
-                                    <label for="trackingNumber">Enter Tracking Number</label>
-                                </div>
-                                <div class="search_button">
-                                    <button class="btn btn-danger fw-bold text-white">Track</button>
-                                </div>
+            <div class="row my-3">
+                <div class="col-sm-12 col-md-6">
+                        <div class="search_bos">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="trackingNumber"
+                                    placeholder="Enter Tracking Number">
+                                <label for="trackingNumber">Enter Tracking Number</label>
+                            </div>
+                            <div class="search_button">
+                                <button class="btn btn-danger fw-bold text-white">Track</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                    </div>
                 </div>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body p-3">
-                                <div class="row">
-                                    <div>
-                                        <p class="card-text">Tracking Code: 2555588111</p>
-                                        <p class="card-text">This shipment is handled by: <strong>DHL eCommerce</strong>
-                                        </p>
-                                        <a href="" class="text-danger text-decoration-underline">Customer Services <i
-                                                class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a>
-                                        <hr>
-                                    </div>
-
-                                    <div>
-                                        <h4 class="fw-bold fs-5">Sorted at sorting center in country of origin</h4>
-                                        <p class="card-text">Monday, August 19, 2024 at 12:23 PM (UTC +02:00)</p>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-sm-12 col-md-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body p-3">
+                                    <div class="row">
+                                        <div>
+                                            <p class="card-text">Tracking Code: 2555588111</p>
+                                            <p class="card-text">This shipment is handled by: <strong>DHL eCommerce</strong>
+                                            </p>
+                                            <a href="" class="text-danger text-decoration-underline">Customer Services <i
+                                                    class="ms-1 fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <hr>
+                                        </div>
+    
+                                        <div>
+                                            <h4 class="fw-bold fs-5">Sorted at sorting center in country of origin</h4>
+                                            <p class="card-text">Monday, August 19, 2024 at 12:23 PM (UTC +02:00)</p>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
                                         </div>
                                     </div>
+    
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed fs-5 fw-bold" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                More Shipment Detials
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed fs-5 fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    More Shipment Detials
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body p-4">
+                                   <div class="row bg-light p-3">
+                                        <div class="col-sm-12 col-md-4">
+                                            <p class="card-text mb-3 mb-md-0">
+                                                Please enter receiver postal code for more information:
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <div class="search_bos">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="trackingNumber"
+                                                        placeholder="Enter Tracking Number">
+                                                    <label for="trackingNumber">Enter Tracking Number</label>
+                                                </div>
+                                                <div class="search_button">
+                                                    <button class="btn btn-danger fw-bold text-white">Track</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed fw-bold fs-5" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                All Shipment Update
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingThree">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    All Shipment Update
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <div class="row px-3 pt-3 pb-2">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div>
+                                                <span class="card-text">Monday</span><br>
+                                                <strong>August 19, 2024</strong>
+                                                <p class="card-text">12:23 PM (UTC +02:00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8 border-start shipment_card">
+                                            <p class="card-text fw-bold mt-2">Sorted at sorting center in country of origin</p>
+                                        </div>
+                                        <hr class="mt-2">
+                                    </div>
+                                    <div class="row px-3 pt-2 pb-2">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div>
+                                                <span class="card-text">Monday</span><br>
+                                                <strong>August 19, 2024</strong>
+                                                <p class="card-text">12:23 PM (UTC +02:00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8 border-start shipment_card">
+                                            <p class="card-text fw-bold mt-2">Sorted at sorting center in country of origin</p>
+                                        </div>
+                                        <hr class="mt-2">
+                                    </div>
+                                    <div class="row px-3 pt-2 pb-2">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div>
+                                                <span class="card-text">Monday</span><br>
+                                                <strong>August 19, 2024</strong>
+                                                <p class="card-text">12:23 PM (UTC +02:00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8 border-start shipment_card">
+                                            <p class="card-text fw-bold mt-2">Sorted at sorting center in country of origin</p>
+                                        </div>
+                                        <hr class="mt-2">
+                                    </div>
+                                    <div class="row px-3 pt-2 pb-2">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div>
+                                                <span class="card-text">Monday</span><br>
+                                                <strong>August 19, 2024</strong>
+                                                <p class="card-text">12:23 PM (UTC +02:00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8 border-start shipment_card">
+                                            <p class="card-text fw-bold mt-2">Sorted at sorting center in country of origin</p>
+                                        </div>
+                                        <hr class="mt-2">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-12 col-md-3"></div>
             </div>
         </div>
     </section>

@@ -100,7 +100,9 @@ select#floatingSelect:hover,#floatingInputGrid:hover{
   box-shadow: 0px 0px 10px 1px #00000023;
   transition: all 0.3s ease-in-out;
 }
-
+button.accordion-button.fw-bold.fs-5:focus {
+  box-shadow: none !important;
+}
 /* For responsive design  */
 @media only screen and (min-width: 600px) {
   .hero-section {
@@ -122,6 +124,9 @@ select#floatingSelect:hover,#floatingInputGrid:hover{
   .search_button button {
     width: 100%;
     margin-bottom: 3rem;
+}
+.shipment_card {
+  border: none !important;
 }
 }
 
