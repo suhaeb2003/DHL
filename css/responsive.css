@@ -1,0 +1,186 @@
+@media only screen and (max-width: 250px) {
+    #third_box:after {
+        top: -22%;
+        right: -15%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    #third_box:after {
+        top: -22%;
+        right: -15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    #third_box:after {
+        content: " ";
+        background: var(--primary-color);
+        width: 7rem;
+        height: 2.5rem;
+        position: absolute;
+        top: -22%;
+        right: -19%;
+        transform: rotate(45deg);
+    }
+
+    img.w-25 {
+        width: 17% !important;
+    }
+
+    .px-4 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .search_button button {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .shipment_card {
+        border: none !important;
+    }
+
+    .locatinBox {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    * {
+        font-size: 98%;
+    }
+
+    .search_bos {
+        position: relative;
+    }
+
+    #third_box:after {
+        content: " ";
+        background: var(--primary-color);
+        width: 7rem;
+        height: 2.5rem;
+        position: absolute;
+        top: -11%;
+        right: -38%;
+        transform: rotate(45deg);
+    }
+
+    .third_box {
+        width: 15rem;
+        position: absolute;
+        right: 0;
+        height: 8rem;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .card_box_warp {
+        position: relative;
+    }
+
+    .search_button button {
+        padding: 12px 20px 13px 20px;
+    }
+
+    .search_button {
+        position: absolute;
+        top: 4%;
+        right: 3px;
+    }
+
+    #card_box {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        border: 0px 1px 1px 1px white !important;
+    }
+
+    .card_box_warp {
+        box-shadow: 0px 0px 5px 4px #00000073;
+    }
+
+    .DHLfyB {
+        margin-top: 5rem !important;
+    }
+
+    .Track_box {
+        margin-top: 3rem;
+    }
+
+    .documnet_div {
+        position: relative;
+        height: 80vh;
+    }
+
+    .left_div {
+        position: absolute;
+        left: 2%;
+        top: 2%;
+        z-index: 1;
+        background: white;
+    }
+
+    .right_div2 {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        z-index: 1;
+        background: white;
+    }
+
+    .right_div {
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+
+    .right_div img {
+        width: 100%;
+        height: 29rem !important;
+    }
+
+    .left_div2 {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    }
+
+    .left_div2 img {
+        width: 100%;
+        height: 29rem !important;
+    }
+
+    .my-5 {
+        margin-top: 6rem !important;
+        margin-bottom: 6rem !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    #card_box {
+        position: absolute;
+        bottom: -9%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {}

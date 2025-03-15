@@ -1,45 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(responsive.css);
 /* create root */
 :root {
   --primary-color: #ffcc00;
   --secondary-color: #000000;
   --tertiary-color: #ffefae;
   --hover-color: #c21b20;
-  --button-color: #D40511;
+  --button-color: #d40511;
 }
+
 a {
   text-decoration: none;
   color: var(--secondary-color);
 }
-header {
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--tertiary-color)
-  );
+
+header,#scrolling_nav {
+  background: linear-gradient(to right,
+      var(--primary-color),
+      var(--tertiary-color));
 }
+
 .hero-section {
   background: url("../Image/headerbg.jpg") no-repeat center center/cover;
 
   height: 70vh;
 }
+
 .sub_section {
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--tertiary-color)
-  );
+  background: linear-gradient(to right,
+      var(--primary-color),
+      var(--tertiary-color));
 }
+
+#third_box {
+  position: relative;
+
+}
+
 input.form-control:focus {
   box-shadow: none;
 }
+
 .package_details {
   font-family: "Roboto Condensed", sans-serif;
 }
+
 /* for card desing */
 .card-title {
   font-size: 15px;
 }
+
 .card_body {
   border-right: 1px solid #473d3d18;
 }
@@ -47,10 +57,12 @@ input.form-control:focus {
 .card_body:hover {
   box-shadow: 0px 0px 18px 1px #00000023;
 }
-.card_body:hover .card-title > a {
+
+.card_body:hover .card-title>a {
   color: var(--hover-color);
   transition: all 0.3s ease-in-out;
 }
+
 .card-text {
   font-size: 12px;
 }
@@ -61,28 +73,36 @@ hr.divHr {
   width: 13%;
   opacity: 100%;
 }
+
 .shadow-md {
   box-shadow: 0px 0px 10px -2px;
 }
+
 .long_card:hover a {
   color: var(--hover-color);
   text-decoration: underline;
 }
+
 .icon-text {
   font-size: 10px;
 }
+
 .bg-light {
   background: #f2f2f2 !important;
 }
+
 .btn-danger {
   background: var(--button-color) !important;
 }
+
 .btn-danger:hover {
   background: var(--hover-color) !important;
 }
+
 .text-danger {
   color: var(--button-color) !important;
 }
+
 .social_icon a {
   padding: 8px !important;
 }
@@ -92,209 +112,198 @@ hr.divHr {
   border-radius: 4px;
   transition: 0.5s;
 }
+
 /*for ship page */
 .ship_title {
   font-size: 2.5rem;
   color: #d40511;
   font-weight: 900;
 }
+
 select#floatingSelect:focus {
   box-shadow: none;
 }
+
 select#floatingSelect:hover,
 #floatingInputGrid:hover {
   box-shadow: 0px 0px 10px 1px #00000023;
   transition: all 0.3s ease-in-out;
 }
+
 button.accordion-button:focus {
   box-shadow: none !important;
   background: none !important;
 }
+
 button.accordion-button:hover {
   color: var(--hover-color) !important;
 }
+
 .shipping_btn {
   border-top: 3px solid var(--button-color) !important;
   box-shadow: 1px 1px 3px 1px #00000030;
 }
-.btnOne,.btnTwo {
+
+.btnOne,
+.btnTwo {
   background: #0000001c;
   border-radius: 2px !important;
   padding: 12px 14px;
 }
 
- /* Remove the checkbox shadow */
- .form-check-input:focus {
+/* Remove the checkbox shadow */
+.form-check-input:focus {
   box-shadow: none;
 }
 
 /* Change checkbox color to green */
 .form-check-input:checked {
-  background-color: #28a745; /* Green color */
+  background-color: #28a745;
+  /* Green color */
   border-color: #28a745;
 }
 
 .form-check-input:checked:focus {
-  box-shadow: none; /* Remove focus shadow */
+  box-shadow: none;
+  /* Remove focus shadow */
 }
 
 /* change location section */
 
-  .ChangeLocation{
-    background: #ffd119ba;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0%;
-    left: 0;
-    z-index: 9999;
-  }
-  #ChangeLocation{
-    display: none;
-  }
-  #openLBox:hover {
-    cursor: pointer;
-  }
-  .locatinBox {
-    width: 40%;
-    overflow-y: scroll;
-    height: 80vh;
-    margin: 21px 0px;
-    left: 50%;
-    transform: translateX(-50%);
+.ChangeLocation {
+  background: #ffd119ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: 9999;
 }
+
+#ChangeLocation {
+  display: none;
+}
+
+#openLBox:hover {
+  cursor: pointer;
+}
+
+.locatinBox {
+  width: 40%;
+  overflow-y: scroll;
+  height: 80vh;
+  margin: 21px 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .no-border-shadow {
   border: none !important;
   box-shadow: none !important;
 }
+
 .custom-select .form-select:focus {
   border-color: transparent !important;
   box-shadow: none !important;
 }
-/* For responsive design  */
-@media only screen and (min-width: 600px) {
-  .hero-section {
-    height: 80vh;
-  }
+
+/* For nav menu */
+.nav_item p:hover{
+  color: var(--hover-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav_item p:focus i{
+  color: green;
+}
+.nav_item:focus-within i,
+.nav_item.active i {
+  transform: rotate(180deg);
+}
+.nav_item i {
+  transition: transform 0.3s ease;
+}
+.nav_item>p {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .hero-section {
-    height: 80vh;
-  }
-  img.w-25 {
-    width: 17% !important;
-  }
-  .px-4 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-  .search_button button {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-  .shipment_card {
-    border: none !important;
-  }
-  .locatinBox {
-    width: 90%;
+.nav_item>p:after {
+  position: absolute;
+  content: "";
+  background: var(--button-color);
+  width: 100%;
+  height: 4px;
+  bottom: -78%;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
+.nav_item.active>p:after {
+  opacity: 1;
 }
 
-@media only screen and (min-width: 992px) {
-  * {
-    font-size: 98%;
-  }
 
-  .search_bos {
-    position: relative;
-  }
-  .search_button button {
-    padding: 12px 20px 13px 20px;
-  }
-  .search_button {
-    position: absolute;
-    top: 4%;
-    right: 3px;
-  }
-  #card_box {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    border: 0px 1px 1px 1px white !important;
-  }
-  .card_box_warp {
-    box-shadow: 0px 0px 5px 4px #00000073;
-  }
-  .DHLfyB {
-    margin-top: 5rem !important;
-  }
-  .Track_box {
-    margin-top: 3rem;
-  }
-  .documnet_div {
-    position: relative;
-    height: 80vh;
-  }
-
-  .left_div {
-    position: absolute;
-    left: 2%;
-    top: 2%;
-    z-index: 1;
-    background: white;
-  }
-  .right_div2 {
-    position: absolute;
-    right: 2%;
-    top: 2%;
-    z-index: 1;
-    background: white;
-  }
-
-  .right_div {
-    position: absolute;
-    right: 0%;
-    top: 0%;
-  }
-  .right_div img {
-    width: 100%;
-    height: 29rem !important;
-  }
-
-  .left_div2 {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-  }
-
-  .left_div2 img {
-    width: 100%;
-    height: 29rem !important;
-  }
-  .my-5 {
-    margin-top: 6rem !important;
-    margin-bottom: 6rem !important;
-  }
+.nav_item {
+  position: relative;
 }
 
-@media only screen and (min-width: 1200px) {
-  .hero-section {
-    height: 60vh;
-  }
-  #card_box {
-    position: absolute;
-    bottom: -9%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-  }
+.nav_cart {
+  position: absolute;
+  width: 56%;
+  background: white;
+  padding: 1rem;
+  z-index: 1;
+  overflow-y: scroll;
+  top: 36px;
+  height: 70vh;
+  transform: scaleY(0);
+  transform-origin:top;
+  transition: transform 0.3s ease;
+}
+.nav_link:hover a {
+  color: var(--hover-color);
+  text-decoration: underline;
 }
 
-@media only screen and (min-width: 1400px) {
+.enterprise_box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  background: white;
+  height: 70vh;
+  top: 52px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
 }
+.header_box_img img {
+  height: 65vh !important;
+}
+
+
+
+
+
+
+
+#scrolling_nav {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  background-color: white; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+#scrolling_nav.show {
+  top: 0; 
+}
+
