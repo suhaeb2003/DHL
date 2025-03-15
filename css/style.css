@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 /* create root */
 :root {
   --primary-color: #ffcc00;
   --secondary-color: #000000;
   --tertiary-color: #ffefae;
-  --hover-color: #d91f26;
-  --button-color: #b9060f;
+  --hover-color: #c21b20;
+  --button-color: #D40511;
 }
 a {
   text-decoration: none;
@@ -68,7 +68,12 @@ hr.divHr {
   color: var(--hover-color);
   text-decoration: underline;
 }
-
+.icon-text {
+  font-size: 10px;
+}
+.bg-light {
+  background: #f2f2f2 !important;
+}
 .btn-danger {
   background: var(--button-color) !important;
 }
@@ -90,17 +95,83 @@ hr.divHr {
 /*for ship page */
 .ship_title {
   font-size: 2.5rem;
-  color: #D40511;
+  color: #d40511;
   font-weight: 900;
 }
-select#floatingSelect:focus{
+select#floatingSelect:focus {
   box-shadow: none;
 }
-select#floatingSelect:hover,#floatingInputGrid:hover{
+select#floatingSelect:hover,
+#floatingInputGrid:hover {
   box-shadow: 0px 0px 10px 1px #00000023;
   transition: all 0.3s ease-in-out;
 }
 button.accordion-button:focus {
+  box-shadow: none !important;
+  background: none !important;
+}
+button.accordion-button:hover {
+  color: var(--hover-color) !important;
+}
+.shipping_btn {
+  border-top: 3px solid var(--button-color) !important;
+  box-shadow: 1px 1px 3px 1px #00000030;
+}
+.btnOne,.btnTwo {
+  background: #0000001c;
+  border-radius: 2px !important;
+  padding: 12px 14px;
+}
+
+ /* Remove the checkbox shadow */
+ .form-check-input:focus {
+  box-shadow: none;
+}
+
+/* Change checkbox color to green */
+.form-check-input:checked {
+  background-color: #28a745; /* Green color */
+  border-color: #28a745;
+}
+
+.form-check-input:checked:focus {
+  box-shadow: none; /* Remove focus shadow */
+}
+
+/* change location section */
+
+  .ChangeLocation{
+    background: #ffd119ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 9999;
+  }
+  #ChangeLocation{
+    display: none;
+  }
+  #openLBox:hover {
+    cursor: pointer;
+  }
+  .locatinBox {
+    width: 40%;
+    overflow-y: scroll;
+    height: 80vh;
+    margin: 21px 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.no-border-shadow {
+  border: none !important;
+  box-shadow: none !important;
+}
+.custom-select .form-select:focus {
+  border-color: transparent !important;
   box-shadow: none !important;
 }
 /* For responsive design  */
@@ -124,9 +195,12 @@ button.accordion-button:focus {
   .search_button button {
     width: 100%;
     margin-bottom: 3rem;
-}
-.shipment_card {
-  border: none !important;
+  }
+  .shipment_card {
+    border: none !important;
+  }
+  .locatinBox {
+    width: 90%;
 }
 }
 
@@ -140,7 +214,7 @@ button.accordion-button:focus {
   }
   .search_button button {
     padding: 12px 20px 13px 20px;
-}
+  }
   .search_button {
     position: absolute;
     top: 4%;
