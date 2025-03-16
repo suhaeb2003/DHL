@@ -376,6 +376,7 @@ b.man_icon i {
   overflow-y: scroll;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100vh;
 }
 #MobileMenuBox.open {
   display: block;
