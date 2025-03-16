@@ -14,7 +14,7 @@ a {
   color: var(--secondary-color);
 }
 
-header,#scrolling_nav {
+header,#scrolling_nav,#MobileMenu {
   background: linear-gradient(to right,
       var(--primary-color),
       var(--tertiary-color));
@@ -22,7 +22,6 @@ header,#scrolling_nav {
 
 .hero-section {
   background: url("../Image/headerbg.jpg") no-repeat center center/cover;
-
   height: 70vh;
 }
 
@@ -238,7 +237,7 @@ button.accordion-button:hover {
   background: var(--button-color);
   width: 100%;
   height: 4px;
-  bottom: -78%;
+  bottom: -21px;
   left: 0;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -254,7 +253,7 @@ button.accordion-button:hover {
 
 .nav_cart {
   position: absolute;
-  width: 56%;
+  width: 22rem;
   background: white;
   padding: 1rem;
   z-index: 1;
@@ -277,7 +276,7 @@ button.accordion-button:hover {
   z-index: 1;
   background: white;
   height: 70vh;
-  top: 52px;
+  top: 68px;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.3s ease;
@@ -290,7 +289,9 @@ button.accordion-button:hover {
 
 
 
-
+b.man_icon i {
+  transform: none !important;
+}
 
 #scrolling_nav {
   position: fixed;
@@ -307,3 +308,90 @@ button.accordion-button:hover {
   top: 0; 
 }
 
+
+
+.search_box_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search_box {
+  display: flex;
+  align-items: center;
+  width: 40px; /* Default collapsed width */
+  overflow: hidden;
+  transition: width 0.4s ease-in-out;
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.search_box .search_input {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+  opacity: 0;
+}
+
+/* Add border only when active */
+.search_box.active {
+  width: 250px; /* Expanded width */
+  border-bottom: 2px solid black; /* Border appears only when clicked */
+  margin-right: 1rem;
+}
+
+.search_box.active .search_input {
+  width: 200px;
+  opacity: 1;
+}
+
+/* Ensure search icon is always visible */
+.search_icon {
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Hide close icon initially */
+.close_icon {
+  display: none;
+  cursor: pointer;
+}
+.close_icon:hover{
+  color:var(--hover-color);
+  transition: 0.5s;
+}
+.doc_pack_item:hover {
+  color: var(--hover-color);
+  transition: 0.5s;
+}
+
+
+/* for mobile menu */
+#MobileMenuBox {
+  top: 58px;
+  display: none;
+  overflow-y: scroll;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#MobileMenuBox.open {
+  display: block;
+}
+#MobileMeneItem {
+  display: none;
+  overflow: hidden;
+  transition: display 0.3s ease;
+}
+#MobileMeneItem.open {
+  display: block;
+}
+
+.toggle_item:hover p,
+.toggle_item:hover a,
+.toggle_item:hover i {
+  color: var(--hover-color); /* Change this to your desired color */
+  transition: color 0.3s ease-in-out;
+}

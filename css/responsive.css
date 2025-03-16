@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 768px) {
     .hero-section {
-        height: 80vh;
+        height: 80vh !important;
     }
 
     #third_box:after {

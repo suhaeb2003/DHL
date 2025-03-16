@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="">
+  <header class="d-none d-md-block">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="./Image/dhl-logo.svg" class="img-fluid"></a>
@@ -40,7 +40,7 @@
 
   </header>
   <!-- for sub header -->
-  <section class="py-3 d-none d-md-block position-relative" id="sub_header">
+  <section class="py-4 d-none d-md-block position-relative z-3" id="sub_header">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col">
@@ -80,7 +80,7 @@
               <div class="enterprise_box">
                 <div class="container py-4">
                   <div class="row">
-                    <div class="col-3 border-end border-1 border-black">
+                    <div class="col-3 border-end border-1">
                       <h1 class="fs-5 fw-bold text-danger mb-2">START SHIPPING</h1>
                       <hr>
                       <div class="border rounded shadow-sm mb-3">
@@ -125,31 +125,49 @@
                     </div>
                     <div class="col-9">
                       <h3 class="fs-5 fw-bold  mb-2">Learn more about</h3>
-                      <div class="row row-cols-3 border-top">
-                        <div class="col">
+                      <div class="row row-cols-3 border-top mt-2">
+                        <div class="col border-end">
                           <h2 class="fs-6 fw-bold py-2">Document and Package</h2>
+                          <div class="row mt-5 ">
+                            <div class="col-11 ">
+                              <a href="" class="fs-6 doc_pack_item">Express document and package shipping </a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                              <i class="fa-solid fa-chevron-right text-danger"></i>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="row">
+                            <div class="col-11">
+                              <a href="" class="fs-6 doc_pack_item">Express document and package shipping </a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                              <i class="fa-solid fa-chevron-right text-danger"></i>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col">
-                          <h2 class="fs-6 fw-bold pt-2">Document and Package</h2>
-                          <p class="p-0 fs-6">Business Only</p>
+                        <div class="col border-end">
+                          <h2 class="fs-6 fw-bold pt-2">Pallets, Containers and Cargo</h2>
+                          <p class="p-0 fs-6 text-muted">Business Only</p>
                           <p class="py-3 fs-6">Air and ocean freight, plus customs and logistics services with DHL
                             Global Forwarding</p>
                           <button class="btn btn-outline-danger fw-bold">Explore Freight services</button>
                         </div>
                         <div class="col">
-                          <h2 class="fs-6 fw-bold pt-2">Document and Package</h2>
-                          <p class="p-0 fs-6">Business Only</p>
-                          <p class="py-3 fs-6">Air and ocean freight, plus customs and logistics services with DHL
-                            Global Forwarding</p>
-                          <button class="btn btn-outline-danger fw-bold">Explore Freight services</button>
+                          <h2 class="fs-6 fw-bold pt-2">DHL for Your Business</h2>
+                          <p class="p-0 fs-6 text-muted">Let‘s be shipping partners</p>
+                          <p class="py-3 fs-6">Small start-up? Medium-sized business going international? Satisfy your
+                            business shipping needs</p>
+                          <button class="btn btn-outline-danger fw-bold">Explore Our Business Offering</button>
                         </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-5">
               <div class="nav_item enterprise">
                 <p class="mb-0">Enterprise Logistics Services<i class="ms-1 fa-solid fa-chevron-down"></i></p>
               </div>
@@ -171,9 +189,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-2">
+            <div class="col-sm-12 col-md-3">
               <div class="nav_item customer">
-                <p class="mb-0">Customer</p>
+                <p class="mb-0">Customer Services</p>
               </div>
             </div>
           </div>
@@ -239,7 +257,7 @@
       </div>
     </div>
   </section>
-  <section class="py-3 d-none d-md-block" id="scrolling_nav">
+  <section class="py-4 d-none d-md-block  z-3" id="scrolling_nav">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col-md-2">
@@ -250,32 +268,172 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-sm-12 col-md-2">
-              <div class="nav_item truck">
+              <div class="nav_item enterprise truck">
                 <p class="mb-0">Truck<i class="ms-1 fa-solid fa-chevron-down"></i></p>
+              </div>
+
+              <div class="enterprise_box">
+                <div class="container py-4">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <h1 class="fs-5 fw-bold text-danger mb-2">TRACK YOUR SHIPMENT</h1>
+                      <p class="fs-6 mb-3">Find the status of your in transit shipment</p>
+                      <div class="search_bos">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="trackingNumber"
+                            placeholder="Enter Tracking Number">
+                          <label for="trackingNumber">Enter Tracking Number</label>
+                        </div>
+                        <div class="search_button">
+                          <button class="btn btn-danger fw-bold text-white px-5">Track</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col header_box_img">
+                      <img src="./Image/headerNavImage.jpeg" class="w-100">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-2">
-              <div class="nav_item ship">
+              <div class="nav_item enterprise ship">
                 <p class="mb-0">Ship<i class="ms-1 fa-solid fa-chevron-down"></i></p>
               </div>
+              <div class="enterprise_box">
+                <div class="container py-4">
+                  <div class="row">
+                    <div class="col-3 border-end border-1">
+                      <h1 class="fs-5 fw-bold text-danger mb-2">START SHIPPING</h1>
+                      <hr>
+                      <div class="border rounded shadow-sm mb-3">
+                        <div class="row my-3 mx-1">
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-file-invoice fs-6"></i>
+                          </div>
+                          <div class="col-md-9 nav_link">
+                            <a href="" class="fs-6 ">Get a Quote</a>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-chevron-right text-danger"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border rounded shadow-sm mb-3">
+                        <div class="row my-3 mx-1">
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-file-invoice fs-6"></i>
+                          </div>
+                          <div class="col-md-9 nav_link">
+                            <a href="shop.html" class="fs-6 ">Ship Now</a>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-chevron-right text-danger"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border rounded shadow-sm mb-3">
+                        <div class="row my-3 mx-1">
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-file-invoice fs-6"></i>
+                          </div>
+                          <div class="col-md-9 nav_link">
+                            <a href="" class="fs-6 ">Request a Business</a>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="fa-solid fa-chevron-right text-danger"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <h3 class="fs-5 fw-bold  mb-2">Learn more about</h3>
+                      <div class="row row-cols-3 border-top mt-2">
+                        <div class="col border-end">
+                          <h2 class="fs-6 fw-bold py-2">Document and Package</h2>
+                          <div class="row mt-5 ">
+                            <div class="col-11 ">
+                              <a href="" class="fs-6 doc_pack_item">Express document and package shipping </a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                              <i class="fa-solid fa-chevron-right text-danger"></i>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="row">
+                            <div class="col-11">
+                              <a href="" class="fs-6 doc_pack_item">Express document and package shipping </a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                              <i class="fa-solid fa-chevron-right text-danger"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col border-end">
+                          <h2 class="fs-6 fw-bold pt-2">Pallets, Containers and Cargo</h2>
+                          <p class="p-0 fs-6 text-muted">Business Only</p>
+                          <p class="py-3 fs-6">Air and ocean freight, plus customs and logistics services with DHL
+                            Global Forwarding</p>
+                          <button class="btn btn-outline-danger fw-bold">Explore Freight services</button>
+                        </div>
+                        <div class="col">
+                          <h2 class="fs-6 fw-bold pt-2">DHL for Your Business</h2>
+                          <p class="p-0 fs-6 text-muted">Let‘s be shipping partners</p>
+                          <p class="py-3 fs-6">Small start-up? Medium-sized business going international? Satisfy your
+                            business shipping needs</p>
+                          <button class="btn btn-outline-danger fw-bold">Explore Our Business Offering</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-5">
               <div class="nav_item enterprise">
                 <p class="mb-0">Enterprise Logistics Services<i class="ms-1 fa-solid fa-chevron-down"></i></p>
               </div>
+
+              <div class="enterprise_box">
+                <div class="container py-4">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <h1 class="fs-5 fw-bold text-danger mb-2">ENTERPRISE LOGISTICS SERVICES</h1>
+                      <p class="fs-6 mb-3">Our Supply Chain division creates custom solutions for enterprise-sized
+                        organizations.</p>
+                      <p class="fs-6 mb-5">Discover what makes DHL Supply Chain the perfect fit as your outsourced
+                        logistics provider (3PL).</p>
+                      <button class="btn btn-danger fw-bold py-3">Exprole DHL Supply Chain</button>
+                    </div>
+                    <div class="col header_box_img">
+                      <img src="./Image/headerNavImage.jpeg" class="w-100">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-2">
+            <div class="col-sm-12 col-md-3">
               <div class="nav_item customer">
-                <p class="mb-0">Customer</p>
+                <p class="mb-0">Customer Services</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-4 d-flex justify-content-end position-relative">
-          <div class="nav_item Login">
-            <p class="mb-0"><i class="fa-solid fa-user"></i><i class="ms-1 fa-solid fa-chevron-down"></i></p>
+          <div class="search_box_wrapper">
+            <div class="search_box">
+              <i class="fa-solid fa-magnifying-glass search_icon"></i>
+              <input type="text" placeholder="Search dhl.com" class="search_input">
+              <i class="fa-solid fa-xmark close_icon"></i>
+            </div>
           </div>
-          
+
+          <div class="nav_item Login">
+            <b class="man_icon"><i class="fa-solid fa-user"></i></b>
+            <p class="mb-0"><i class="ms-1 fa-solid fa-chevron-down"></i></p>
+          </div>
+
           <div class="nav_cart">
             <h3 class="fs-5 fw-bold mb-2">Log in to</h3>
             <div class="row justify-content-between my-3 ">
@@ -328,6 +486,129 @@
             <div>
               <button class="btn btn-danger py-md-2 fs-6 fw-bold w-100">Learn About Portals</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Mobile Menu start here -->
+  <section class="d-block d-md-none py-3 fixed-top m-0" id="MobileMenu">
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <img src="./Image/dhl-logo.svg" alt="">
+        </div>
+        <div class="col-2">
+          <i class="fa-solid fa-bars fs-2 text-danger" id="menuIcon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-white position-absolute w-100" id="MobileMenuBox">
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-10">
+            <p class="fw-bold mb-0">Track</p>
+          </div>
+          <div class="col-2">
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </div>
+        </div>
+        <div class="row py-4 shadow-sm menu-item" id="MobileMeneItem">
+          <h5 class="fw-bold text-uppercase fs-6 text-danger">Track your shipment</h5>
+          <div class="search_bos">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="trackingNumber" placeholder="Enter Tracking Number">
+              <label for="trackingNumber">Enter Tracking Number</label>
+            </div>
+            <div class="search_button">
+              <button class="btn btn-danger fw-bold text-white px-5">Track</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-10">
+            <p class="fw-bold mb-0">Ship</p>
+          </div>
+          <div class="col-2">
+            <i class="fa-solid fa-chevron-down toggle-icon" ></i>
+          </div>
+        </div>
+        <div class="row py-4 shadow-sm menu-item" id="MobileMeneItem">
+            <div class="row" id="mobileSingleItem">
+              <a href="" class="mb-2 border-bottom py-2">Get a Quote<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <a href="" class="mb-2 border-bottom py-2">Ship Now<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <a href="" class="mb-2 border-bottom py-2">Request a Business Account<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <h4 class="fw-bolder fs-6 my-3 border-bottom pb-4">Document and Package</h4>
+              <a href="" class="mb-2 border-bottom py-2">Express document and package shipping <i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <a href="" class="mb-2 border-bottom py-2">Reatiers or volume shipping (Business Only)<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <h4 class="fw-bolder fs-6 my-3 border-bottom pb-4">Pallets,Containers and Cargo (Business Only)</h4>
+              <a href="" class="mb-2 border-bottom py-2">Explore Freight Services<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+              <h4 class="fw-bolder fs-6 my-3 border-bottom pb-4">DHL for Your Business</h4>
+              <a href="" class="mb-2 border-bottom py-2">Explore Our Business Offerings<i class="ms-2 fa-solid fa-chevron-right text-danger"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-10">
+            <p class="fw-bold mb-0">Enterprise Logistics Services</p>
+          </div>
+          <div class="col-2">
+            <i class="fa-solid fa-chevron-down toggle-icon" ></i>
+          </div>
+        </div>
+        <div class="row py-4 px-2 shadow-sm menu-item" id="MobileMeneItem">
+            <div class="row" id="mobileSingleItem">
+               <div class="px-2">
+                <p class="mb-2">
+                  Our Supply Chain division creates custom solutions for enterprise-sized organizations.
+                </p>
+                <p class="mb-3">Discover what makes DHL Supply Chain the perfect fit as your outsourced logistics provider (3PL).</p>
+            
+               </div>
+               <button class="btn btn-danger fw-bold py-3">Explore DHL Supply Chain</button>
+              </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-12">
+            <a class=" mb-0">Customer Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-12">
+            <a class=" mb-0">Customer Portal Logins<i class=" ms-1 fa-solid fa-chevron-right icon-text text-danger"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-12">
+            <a class=" mb-0">Find Location<i class=" ms-1 fa-solid fa-arrow-up-right-from-square icon-text text-danger"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="search_box_wrapper">
+            <div class="search_box">
+              <i class="fa-solid fa-magnifying-glass search_icon"></i>
+              <input type="text" placeholder="Search dhl.com" class="search_input">
+              <i class="fa-solid fa-xmark close_icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobileNavitem_warp">
+        <div class="row py-3 border-bottom toggle_item">
+          <div class="col-12">
+            <a class=" mb-0">Change Location (us)</a>
           </div>
         </div>
       </div>
@@ -802,37 +1083,53 @@
   </footer>
   <!-- Footer Section end -->
   <script src="./Js/bootstrap.bundle.js"></script>
+  <script src="./Js/script.js"></script>
+  <script src="./Js/mobileNav.js"></script>
   <script>
     document.querySelectorAll(".nav_item").forEach((item) => {
       item.addEventListener("click", function () {
+        // Remove "active" class from other nav items
         document.querySelectorAll(".nav_item").forEach((el) => {
           if (el !== this) {
             el.classList.remove("active");
           }
         });
         this.classList.toggle("active");
+
+        // Handle Login button click
         if (this.classList.contains("Login")) {
-          let navCart = document.querySelector('.nav_cart');
-          document.querySelectorAll(".nav_cart").forEach(cart => {
-            if (cart !== navCart) {
-              cart.style.transform = 'scaleY(0)'; 
-            }
-          });
-          navCart.style.transform = navCart.style.transform === 'scaleY(1)' ? 'scaleY(0)' : 'scaleY(1)';
+          let navCart = this.nextElementSibling; // Select the next sibling as the cart
+          if (navCart && navCart.classList.contains("nav_cart")) {
+            // Close other nav_cart elements
+            document.querySelectorAll(".nav_cart").forEach(cart => {
+              if (cart !== navCart) {
+                cart.style.transform = 'scaleY(0)';
+              }
+            });
+
+            // Toggle the selected nav_cart
+            navCart.style.transform = navCart.style.transform === 'scaleY(1)' ? 'scaleY(0)' : 'scaleY(1)';
+          }
         } else {
-          document.querySelector('.nav_cart').style.transform = 'scaleY(0)';
+          // If clicking something else, close all .nav_cart elements
+          document.querySelectorAll('.nav_cart').forEach(cart => {
+            cart.style.transform = 'scaleY(0)';
+          });
         }
 
+        // Handle enterprise dropdowns
         if (this.classList.contains("enterprise")) {
           let enterpriseBox = this.nextElementSibling; // Assuming the .enterprise_box is the next sibling element
-          document.querySelectorAll(".enterprise_box").forEach((box) => {
-            if (box !== enterpriseBox) {
-              box.style.transform = 'scaleY(0)'; // Close other enterprise boxes
-            }
-          });
+          if (enterpriseBox && enterpriseBox.classList.contains("enterprise_box")) {
+            document.querySelectorAll(".enterprise_box").forEach((box) => {
+              if (box !== enterpriseBox) {
+                box.style.transform = 'scaleY(0)'; // Close other enterprise boxes
+              }
+            });
 
-          // Toggle the current enterprise box
-          enterpriseBox.style.transform = enterpriseBox.style.transform === 'scaleY(1)' ? 'scaleY(0)' : 'scaleY(1)';
+            // Toggle the current enterprise box
+            enterpriseBox.style.transform = enterpriseBox.style.transform === 'scaleY(1)' ? 'scaleY(0)' : 'scaleY(1)';
+          }
         } else {
           // If another nav item is clicked, close all .enterprise_box elements
           document.querySelectorAll('.enterprise_box').forEach((box) => {
@@ -842,21 +1139,46 @@
       });
     });
 
+    const scrollNav = document.getElementById("scrolling_nav");
 
-    // const nav = document.getElementById("scrolling_nav");
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    // window.addEventListener("scroll", function () {
-    //   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > 1) {
+        scrollNav.classList.add("show");
+      } else {
+        scrollNav.classList.remove("show");
+      }
+    });
 
-    //   if (scrollTop > 1) {
-    //     // Show the navbar when scrolling starts
-    //     nav.classList.add("show");
-    //   } else {
-    //     // Hide the navbar when user returns to the top
-    //     nav.classList.remove("show");
-    //   }
-    // });
+    document.addEventListener("DOMContentLoaded", function () {
+  const searchBoxes = document.querySelectorAll(".search_box");
+  const searchInputs = document.querySelectorAll(".search_input");
+  const closeIcons = document.querySelectorAll(".close_icon");
+  const searchIcons = document.querySelectorAll(".search_icon");
+
+  searchIcons.forEach((icon, index) => {
+    icon.addEventListener("click", function () {
+      searchBoxes[index].classList.add("active");
+      searchInputs[index].focus();
+      closeIcons[index].style.display = "inline"; // Show close icon
+    });
+  });
+
+  closeIcons.forEach((icon, index) => {
+    icon.addEventListener("click", function () {
+      searchBoxes[index].classList.remove("active");
+      searchInputs[index].value = "";
+      closeIcons[index].style.display = "none"; // Hide close icon
+    });
+  });
+});
+
+
+
+
   </script>
+
 </body>
 
 </html>
