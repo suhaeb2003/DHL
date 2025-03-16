@@ -14,10 +14,14 @@ a {
   color: var(--secondary-color);
 }
 
-header,#scrolling_nav,#MobileMenu {
-  background: linear-gradient(to right,
-      var(--primary-color),
-      var(--tertiary-color));
+header,
+#scrolling_nav,
+#MobileMenu {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--tertiary-color)
+  );
 }
 
 .hero-section {
@@ -26,14 +30,15 @@ header,#scrolling_nav,#MobileMenu {
 }
 
 .sub_section {
-  background: linear-gradient(to right,
-      var(--primary-color),
-      var(--tertiary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--tertiary-color)
+  );
 }
 
 #third_box {
   position: relative;
-
 }
 
 input.form-control:focus {
@@ -57,7 +62,7 @@ input.form-control:focus {
   box-shadow: 0px 0px 18px 1px #00000023;
 }
 
-.card_body:hover .card-title>a {
+.card_body:hover .card-title > a {
   color: var(--hover-color);
   transition: all 0.3s ease-in-out;
 }
@@ -210,12 +215,12 @@ button.accordion-button:hover {
 }
 
 /* For nav menu */
-.nav_item p:hover{
+.nav_item p:hover {
   color: var(--hover-color);
   text-decoration: underline;
   cursor: pointer;
 }
-.nav_item p:focus i{
+.nav_item p:focus i {
   color: green;
 }
 .nav_item:focus-within i,
@@ -225,13 +230,13 @@ button.accordion-button:hover {
 .nav_item i {
   transition: transform 0.3s ease;
 }
-.nav_item>p {
+.nav_item > p {
   position: relative;
   display: inline-flex;
   align-items: center;
 }
 
-.nav_item>p:after {
+.nav_item > p:after {
   position: absolute;
   content: "";
   background: var(--button-color);
@@ -242,10 +247,9 @@ button.accordion-button:hover {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.nav_item.active>p:after {
+.nav_item.active > p:after {
   opacity: 1;
 }
-
 
 .nav_item {
   position: relative;
@@ -261,7 +265,7 @@ button.accordion-button:hover {
   top: 36px;
   height: 70vh;
   transform: scaleY(0);
-  transform-origin:top;
+  transform-origin: top;
   transition: transform 0.3s ease;
 }
 .nav_link:hover a {
@@ -285,10 +289,6 @@ button.accordion-button:hover {
   height: 65vh !important;
 }
 
-
-
-
-
 b.man_icon i {
   transform: none !important;
 }
@@ -298,17 +298,15 @@ b.man_icon i {
   top: -100px;
   left: 0;
   width: 100%;
-  background-color: white; 
+  background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: top 0.3s ease-in-out;
   z-index: 9999;
 }
 
 #scrolling_nav.show {
-  top: 0; 
+  top: 0;
 }
-
-
 
 .search_box_wrapper {
   display: flex;
@@ -323,7 +321,6 @@ b.man_icon i {
   transition: width 0.4s ease-in-out;
   position: relative;
   justify-content: space-between;
-  
 }
 
 .search_box .search_input {
@@ -359,8 +356,8 @@ b.man_icon i {
   display: none;
   cursor: pointer;
 }
-.close_icon:hover{
-  color:var(--hover-color);
+.close_icon:hover {
+  color: var(--hover-color);
   transition: 0.5s;
 }
 .doc_pack_item:hover {
@@ -397,4 +394,130 @@ b.man_icon i {
 .toggle_item:hover i {
   color: var(--hover-color); /* Change this to your desired color */
   transition: color 0.3s ease-in-out;
+}
+
+/* for progress bar */
+.progress_bar {
+  width: 92% !important;
+  height: 10px;
+  position: absolute;
+  content: " ";
+  background: #67a31d;
+  left: 4%;
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--button-color) !important;
+}
+.sub_progress_ber {
+  color: red !important;
+  background: red !important;
+  width: 50% !important;
+}
+
+.icon_one {
+  font-size: 38px;
+  position: absolute;
+  top: -14px;
+  right: 33%;
+  color: white;
+}
+
+.icon_two {
+  font-size: 38px;
+  position: absolute;
+  top: -14px;
+  left: 33%;
+  color: white;
+}
+.progress_div {
+  width: 100%;
+  position: relative;
+}
+.progress_bar:after {
+  position: absolute;
+  content: " ";
+  background: #64a31d;
+  width: 10px;
+  height: 17px;
+  top: 0px;
+  right: -9px;
+  border-radius: 0px 17px 0px 0px;
+}
+
+.progress_bar:before {
+  position: absolute;
+  content: " ";
+  background: #64a31d;
+  width: 10px;
+  height: 17px;
+  bottom: 0px;
+  left: -9px;
+  border-radius: 0px 0px 0px 17px;
+}
+
+.circle {
+  width: 31px;
+  height: 33px;
+  background: #64a31d;
+  left: 37%;
+  border-radius: 100%;
+  border: 11px double #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.location_icon:before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  left: -31px;
+  color: gray;
+}
+
+.location_icon {
+  position: relative;
+}
+
+.shipment_card {
+  position: relative;
+}
+
+.shipment_card:before {
+  content: "\f0d8";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  color: gray;
+  top: 3px;
+  left: -16px;
+}
+.location_icon::after{
+  position: absolute;
+    content: " ";
+    background: gray;
+    width: 1px;
+    height: 60px;
+    left: -22px;
+    top: 34px;
+}
+.last_card:after {
+  width: 0 !important;
+}
+
+.shipment_card:after {
+  position: absolute;
+  content: " ";
+  background: gray;
+  width: .1rem;
+  height: 60px;
+  left: -11px;
+  top: 34px;
 }

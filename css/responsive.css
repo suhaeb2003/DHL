@@ -18,6 +18,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .location_icon::after{
+          height: 100px !important;
+      }
+
+    .shipment_card:after {
+        height: 100px !important;
+      }
     .hero-section {
         height: 80vh !important;
     }
